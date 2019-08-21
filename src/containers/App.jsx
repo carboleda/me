@@ -1,5 +1,5 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import Main from '../components/Main';
 import Sidebar from '../components/Sidebar';
 import Info from '../components/Info';
@@ -19,9 +19,14 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
+const LoadingStyled = styled.h1`
+    text-align: center;
+    color: #C21858;
+`;
+
 const App = () => {
     const data = useGetData();
-    return data.length === 0 ? <h1>Cargando...</h1> : (
+    return data.length == 0 ? <LoadingStyled>Cargando...</LoadingStyled> : (
         <Main>
             <GlobalStyle />
             <Sidebar>
