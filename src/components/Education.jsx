@@ -2,6 +2,7 @@ import React from 'react';
 import H2Styled from '../styled/H2Styled';
 import H3Styled from '../styled/H3Styled';
 import PStyled from '../styled/PStyled';
+import DivSubStyled from '../styled/DivSubStyled';
 
 const Education = props => (
     <div className="Education">
@@ -11,9 +12,9 @@ const Education = props => (
                 props.data.map((edu, index) => (
                     <div className="Education-item" key={`Edu-${index}`}>
                         <H3Styled>
-                            {edu.degree} {edu.institution}
-                            <span>{edu.startDate} - {edu.endDate}</span>
+                            {edu.degree} @ {edu.institution}
                         </H3Styled>
+                        <DivSubStyled>{edu.startDate} - {edu.endDate}</DivSubStyled>
                         <PStyled name={edu.description} />
                     </div>
                 ))

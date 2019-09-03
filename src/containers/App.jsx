@@ -12,7 +12,7 @@ import useGetData from '../hooks/useGetData';
 
 const GlobalStyle = createGlobalStyle`
     body {
-        font-family: 'Lato' sans-serif;
+        font-family: 'Lato', sans-serif;
         margin: 0;
         padding: 0;
         background: #F5F5F5;
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 
 const LoadingStyled = styled.h1`
     text-align: center;
-    color: #C21858;
+    color: #1b4e96;
 `;
 
 const App = () => {

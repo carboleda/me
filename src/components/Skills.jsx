@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import H2Styled from '../styled/H2Styled';
 
 const SkillsContainer = styled.div`
     display: grid;
@@ -16,7 +17,7 @@ const SkillsLine = styled.div`
     height: 8px;
     position: relative;
     border-radius: 50px;
-    background: #F8BBD0;
+    background: #c1d4f4;
 `;
 
 const move = keyframes`
@@ -29,7 +30,7 @@ const SkillsSpan = styled.span`
     height: 100%;
     width: ${props => props.width};
     border-radius: 8px;
-    background-color: #C2185B;
+    background-color: #1b4e96;
     overflow: hidden;
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -51,6 +52,7 @@ const SkillsSpan = styled.span`
 
 const Skills = props => (
     <div className="Skills">
+        <H2Styled name="Skills" />
         <SkillsContainer>
             {
                 props.data.map((skill, index) => (
