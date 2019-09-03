@@ -35,6 +35,7 @@ module.exports = {
         }),
         new FaviconsWebpackPlugin({
             logo: './public/icon.png',
+            publicPath: '/me',
             prefix: 'assets/',
             inject: true,
             background: '#fff',
