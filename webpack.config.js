@@ -33,6 +33,19 @@ module.exports = {
             template: './public/index.html',
             file: './index.html'
         }),
-        new FaviconsWebpackPlugin('./public/icon.png')
+        new FaviconsWebpackPlugin({
+            logo: './public/icon.png',
+            prefix: 'assets/',
+            inject: true,
+            background: '#fff',
+            title: 'CV - Carlos Fernando Arboleda Garcés',
+            icons: {
+                android: true,
+                appleIcon: true,
+                favicons: true,
+                opengraph: false,
+                twitter: false,
+            }
+        })
     ]
 }
