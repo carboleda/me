@@ -1,4 +1,7 @@
 # me
-CV
+### **CV - Carlos Fernando Arboleda Garcés**
+http://carlosarboleda.co
 
-### **Color Palette:** https://www.color-hex.com/color-palette/81980
+
+# Tools
+- **Color Palette:** https://www.color-hex.com/color-palette/81980
